@@ -1,0 +1,23 @@
+.categoriasLista{
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.categoriasLista button{
+    color: black;
+    background-color: gainsboro;
+    border-style: hidden;
+    border-radius: 20px;
+    width: 120px;
+    height: 40px;
+    margin: 2px;
+}
+.categoriasLista button:hover{
+    transition-duration: 0.3s; 
+    border: 2px solid #0074d9;
+}
+.categoriasLista .active{
+    background-color: #ff851b;
+    color:#ffffff ;
+}
