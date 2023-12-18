@@ -8,7 +8,7 @@ function Home() {
     return (
       <>
         <NavBar />
-        <div className="titulos">Nuestra seleccion de productos</div>
+        <div className="titulos">Productos en oferta</div>
         <ProductosLista productos={productosAleatorios}/>                    
       </>
     );

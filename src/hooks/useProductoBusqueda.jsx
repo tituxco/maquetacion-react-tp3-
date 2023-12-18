@@ -4,10 +4,10 @@ function useProductoBusqueda(tipo, busqueda) {
   //console.log("tipo:-" + tipo + "- busqueda:-" + busqueda + "-");
   switch (tipo) {
     case "categorias":
-      urlProductos = "https://dummyjson.com/products/category/" + busqueda;
+      urlProductos = "https://dummyjson.com/products/category/" + busqueda; //FILTRADO DE PRODUCTOS POR CATEGORIA
       break;
     case "id":
-      urlProductos = "https://dummyjson.com/products/" + busqueda;
+      urlProductos = "https://dummyjson.com/products/" + busqueda;//POR SI QUEREMOS VER UN PRODUCTO ESPECIFICO
       break;
     case "buscar":
       if (

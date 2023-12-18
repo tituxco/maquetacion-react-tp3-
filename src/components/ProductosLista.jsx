@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./productosLista.css";
 
-function Paginacion({ listaProductos, productosPorPagina }) {
+function Paginacion({ listaProductos, productosPorPagina,limpiarPaginado }) {
   const [paginaActual, setPaginaActual] = useState(1);
 
   const indiceInicio = (paginaActual - 1) * productosPorPagina;
@@ -14,7 +14,12 @@ function Paginacion({ listaProductos, productosPorPagina }) {
     if (nuevaPagina > 0 && nuevaPagina <= totalPaginas) {
       setPaginaActual(nuevaPagina);
     }
+    if (limpiarPaginado==true){
+      setPaginaActual(1)
+      limpiarPaginado=false
+    }
   };
+
 
   return (
     <>
@@ -49,7 +54,7 @@ function Paginacion({ listaProductos, productosPorPagina }) {
   );
 }
 
-function ProductosLista({ productos }) {
+function ProductosLista({ productos,limpiarPaginado }) {
   return (
     <div>
       <Paginacion listaProductos={productos} productosPorPagina={5} />

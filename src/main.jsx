@@ -9,16 +9,16 @@ import Productos from './components/Productos.jsx';
 const rutas = createBrowserRouter([
   {
     path: "/",
-    element: <Home/>,
+    element: <Home/>,//en esta seccion home va a mostrar aleatoriamente 10 productos
     errorElement: <Error />,
   },
   {
     path: "/productos/:tipo/:busqueda",
-    element: <Productos/>, 
+    element: <Productos/>, //en esta seccion va a mostrar todos lo pedidos de a 5 por pagina y ademas tiene buscador
   },
   {
     path: "categorias",
-    element: <Categorias />,
+    element: <Categorias />, //en esta seccion vamos a tener todos los productos divididos por categorias
   },
   
 ]);

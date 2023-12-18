@@ -27,7 +27,7 @@ function Productos() {
       />
 
       <div className="titulos">Todos nuestros productos</div>
-      <ProductosLista productos={productosBusqueda} />
+      <ProductosLista productos={productosBusqueda}  limpiarPaginado={true}/>
     </>
   );
 }

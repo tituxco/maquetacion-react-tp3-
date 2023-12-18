@@ -49,7 +49,7 @@ function Categorias() {
           : `Productos de la categoría: ${categoriaDefecto}`}
       </div>
 
-      <ProductosLista productos={prodFiltra} />
+      <ProductosLista productos={prodFiltra}  limpiarPaginado={false}/>
     </>
   );
 }
